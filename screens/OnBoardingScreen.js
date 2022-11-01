@@ -84,14 +84,12 @@ const OnboardingScreen = ({navigation}) => {
           justifyContent: 'space-between',
           paddingHorizontal: 20,
         }}>
-        {/* Indicator container */}
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'center',
             marginTop: 20,
           }}>
-          {/* Render indicator */}
           {slides.map((_, index) => (
             <View
               key={index}
@@ -106,7 +104,6 @@ const OnboardingScreen = ({navigation}) => {
           ))}
         </View>
 
-        {/* Render buttons */}
         <View style={{marginBottom: 20}}>
           {currentSlideIndex == slides.length - 1 ? (
             <View style={{height: 50}}>
